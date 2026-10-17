@@ -9,4 +9,10 @@ public class GreeterTests
     {
         Assert.Equal("Hello, Ada!", Greeter.Greet("Ada"));
     }
+
+    [Fact]
+    public void FarewellSaysGoodbyeByName()
+    {
+        Assert.Equal("Goodbye, Ada!", Greeter.Farewell("Ada"));
+    }
 }
