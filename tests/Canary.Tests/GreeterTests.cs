@@ -9,4 +9,10 @@ public class GreeterTests
     {
         Assert.Equal("Hello, Ada!", Greeter.Greet("Ada"));
     }
+
+    [Fact]
+    public void ShoutUpperCasesNameWithExclamation()
+    {
+        Assert.Equal("ADA!", Greeter.Shout("Ada"));
+    }
 }
